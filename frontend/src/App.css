@@ -31,9 +31,16 @@ body, html, #root {
 /* 카드 영역 */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*한 줄에 3개*/
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  /* 중앙 정렬 */
+  max-width: 1000px;
+  margin: 7vw auto;
+
+  /* 좌우 여백 반응형 */
+  /* padding: 20px; */
+  padding: 0 clamp(16px, 5vw, 60px);
   /* flex: 1; */
 }
 
@@ -56,6 +63,8 @@ body, html, #root {
 .card-header {
   background: rgba(128, 128, 128, 0.5);
   padding: 10px;
+  padding-left: 15px;
+  padding-bottom: 7px;
   border-radius: 20px 20px 0 0;
   color: white;
   font-weight: bold;

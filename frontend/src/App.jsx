@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import TodoList from './conponents/TodoList'
+import Memo from './conponents/Memo'
+import Dday from './conponents/Dday'
 import './App.css'
 
 function App() {
@@ -19,18 +22,21 @@ function App() {
             <div className="card-header">달력</div>
             <div className="card-body">달력 위젯</div>
           </div>
-          <div className="card">
+          <Dday />
+          {/* <div className="card">
             <div className="card-header">디데이</div>
             <div className="card-body">디데이 목록</div>
-          </div>
-          <div className="card">
+          </div> */}
+          <TodoList />
+          {/* <div className="card">
             <div className="card-header">ToDo</div>
             <div className="card-body">할 일 리스트</div>
-          </div>
-          <div className="card wide-card">
+          </div> */}
+          <Memo />
+          {/* <div className="card wide-card">
             <div className="card-header">메모</div>
             <div className="card-body">메모 작성</div>
-          </div>
+          </div> */}
           <div className="card">
             <div className="card-header">날씨</div>
             <div className="card-body">날씨 보기</div>

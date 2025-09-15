@@ -35,8 +35,8 @@ body, html, #root {
   gap: 24px;
 
   /* 중앙 정렬 */
-  max-width: 1000px;
-  margin: 7vw auto;
+  max-width: 80vw;
+  margin: 8vw auto;
 
   /* 좌우 여백 반응형 */
   /* padding: 20px; */
@@ -49,7 +49,7 @@ body, html, #root {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   box-shadow: 8px 10px 12px rgba(0, 0, 0, 0.3);
-  min-height: 200px;
+  min-height: 230px;
   display: flex;
   flex-direction: column;
 }
@@ -75,4 +75,37 @@ body, html, #root {
   flex: 1;
   padding: 15px;
   color: white;
+}
+
+.dday-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dday-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.input-group {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-group button {
+  padding: 5px 10px;
+  border: none;
+  background: #0078ff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }

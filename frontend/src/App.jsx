@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import TodoList from './conponents/TodoList'
 import Memo from './conponents/Memo'
 import Dday from './conponents/Dday'
+import CalendarWeek from './conponents/CalendarWeek'
 import './App.css'
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
 
         {/* 카드 영역 */}
         <div className="card-container">
-          <div className="card">
+          <CalendarWeek />
+          {/* <div className="card">
             <div className="card-header">달력</div>
             <div className="card-body">달력 위젯</div>
-          </div>
+          </div> */}
           <Dday />
           {/* <div className="card">
             <div className="card-header">디데이</div>

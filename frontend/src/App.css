@@ -109,3 +109,41 @@ body, html, #root {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.calendar-week {
+  max-height: 250px;
+  /* padding: 5px; */
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+  color: #ddd;
+}
+
+.calendar-day {
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.calendar-day.today {
+  background: #0078ff;
+  color: white;
+  font-weight: bold;
+}
